@@ -1,13 +1,13 @@
 <div>
-    <img src="{{this.image}}" alt="{{this.title}}">
+    <img src="{{movieDetail.image}}" alt="{{movieDetail.title}}">
     <a href="/movies">Atrás</a>
-    <h3>Director: {{this.director}}</h3>
+    <h3>Director: {{movieDetail.director}}</h3>
     <h4>Actores de reparto</h4>
-        {{#each this.stars}}
+        {{#each movieDetail.stars}}
             <li>{{this}}</li>
         {{/each}}
-    <p>{{this.description}}</p>
-    {{#each this.showtime}}
+    <p>{{movieDetail.description}}</p>
+    {{#each movieDetail.showtime}}
         <li>{{this}}</li>
     {{/each}}
 </div>
